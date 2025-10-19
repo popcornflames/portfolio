@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Dias - Vitae Minimalista</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: 400;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+}
+p, li {
+    font-size: 1.1rem;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.card:hover {
+    background-color: #222;
+}
+a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* MENU LATERAL SIMPLES */
+nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav a {
+    width: 10px;
+    height: 10px;
+    background: #888;
+    border-radius: 50%;
+    display: block;
+}
+nav a.active, nav a:hover {
+    background: #e0e0e0;
+}
+
+/* FORMULÁRIO SIMPLES */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 1rem;
+}
+input, textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #111;
+    color: #e0e0e0;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #888;
+}
+button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #111;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #222;
+}
+#resposta {
+    margin-top: 1rem;
+    color: #0f0;
+}
+
+/* RESPONSIVO */
+@media(max-width:600px){
+    section {
+        padding: 3rem 1rem;
+    }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- MENU LATERAL -->
+<nav>
+    <a href="#sobre" class="active"></a>
+    <a href="#formacao"></a>
+    <a href="#experiencias"></a>
+    <a href="#habilidades"></a>
+    <a href="#contato"></a>
+</nav>
+
+<!-- SOBRE -->
+<section id="sobre">
+<h1>Daniel Dias</h1>
+<p>Desenvolvedor Web | Minimalista. Crio projetos clean, focados em experiência do usuário e design simples.</p>
+</section>
+
+<!-- FORMAÇÃO -->
+<section id="formacao">
+<h2>Formação Acadêmica</h2>
+<div class="card">
+<p><strong>Ensino Médio Completo</strong>-[E.E. Alfredo Roberto]| 2016-2019</p>
+</div>
+<div class="card">
+<p><strong>Informática Básica:</strong> Escotec | 2015-2015</p>
+</div>
+<div class="card">
+<p><strong>Programação e Controle de Produção (PCP):</strong> Senai-Suzano | Janeiro de 2020 - Fevereiro de 2021</p>
+</div>
+<div class="card">
+<p><strong>Excel - Avançado:</strong> Senai-Suzano | Agosto de 2022 - Setembro de 2022</p>
+</div>
+<div class="card">
+<p><strong>Psicologia - Bacharelado:</strong> Unipiaget | Fevereiro de 2024 - Julho de 2025 <p>Curso Trancado</p>
+</div>
+</section>
+
+<!-- EXPERIÊNCIAS -->
+<section id="experiencias">
+<h2>Experiências / Projetos</h2>
+<div class="card">
+<p><strong>Freelancer em desenvolvimento Web</strong></p>
+<p>Desenvolvi websites responsivos, apliquei conceitos de UX e mantive sistemas internos.</p>
+</div>
+<div class="card">
+<p><strong>Projeto Pessoal</strong> - Portfolio Online | 2025</p>
+<p>Criação de um portfólio interativo minimalista com HTML, CSS e JavaScript.</p>
+</div>
+
+<div class="card">
+<p><strong>Frentista / Caixa</strong> | Abril de 2022 – Abril de 2025</p>
+<ul>
+<li>Atendimento ao cliente, oferecendo suporte e orientações sobre produtos e serviços.</li>
+<li>Verificação diária das bombas de combustível.</li>
+<li>Manutenção da limpeza e organização do posto de combustível.</li>
+<li>Cobrança de pagamentos em dinheiro e cartão.</li>
+<li>Abertura e fechamento do caixa, verificando inconsistências financeiras.</li>
+<li>Troca de óleo e lubrificação dos veículos seguindo normas de segurança.</li>
+<li>Separação de produtos para abastecimento do posto.</li>
+<li>Apoio a novos funcionários sobre produtos, serviços e normas internas.</li>
+<li>Conferência de notas fiscais e pedidos de compra.</li>
+<li>Resolução de conflitos e reclamações de forma eficiente e cordial.</li>
+<li>Realização de vendas adicionais, aumentando o faturamento.</li>
+<li>Controle do estoque de combustíveis, monitorando níveis e realizando pedidos.</li>
+</ul>
+</div>
+
+<div class="card">
+<p><strong>Vendedor / Balconista</strong> - Casa de Rações Alemão | Fevereiro de 2022 – Abril de 2022</p>
+<ul>
+<li>Atendimento presencial ao cliente, oferecendo produtos e serviços.</li>
+<li>Auxílio na resolução de dúvidas dos clientes.</li>
+<li>Organização do ambiente de trabalho.</li>
+</ul>
+</div>
+
+<div class="card">
+<p><strong>PCP (Planejamento e Controle da Produção)</strong> - Faro Embalagens | Maio de 2020 – Agosto de 2021</p>
+<ul>
+<li>Compras de matéria-prima, insumos e relacionamento direto com fornecedores.</li>
+<li>Programar o processo produtivo.</li>
+<li>Recarregar o maquinário, exigir prioridades de produção e monitorar a cadeia produtiva.</li>
+<li>Planejamento de reuniões diárias com o setor de logística para realizar entregas.</li>
+<li>Definir os recursos a serem utilizados ao início e término da produção.</li>
+<li>Avaliar e corrigir notas fiscais, combatendo divergências.</li>
+<li>Fechamento salarial mensal dos Mecânicos de Produção.</li>
+<li>Realizar e instruir treinamentos sobre mecânica e comportamento humano.</li>
+<li>Conhecimento básico sobre peças industriais.</li>
+<li>Organização do almoxarifado utilizando a regra dos 5S.</li>
+</ul>
+</div>
+
+<div class="card">
+<p><strong>Produção</strong> - Auge Embalagens | Abril de 2019 – Abril de 2020</p>
+<ul>
+<li>Dar finalidade ao produto.</li>
+<li>Realizar o fechamento das embalagens e a inspeção de acordo com o setor de qualidade.</li>
+<li>Operador de Máquinas de Corte e Vinco.</li>
+<li>Auxiliar em impressoras de papelão.</li>
+</ul>
+</div>
+
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+<h2>Habilidades</h2>
+<ul>
+<li>HTML5, CSS3, JavaScript</li>
+<li>React.js / Node.js (básico)</li>
+<li>Design Responsivo & UX/UI</li>
+<li>Git / GitHub</li>
+<li>Comunicação e Trabalho em Equipe</li>
+</ul>
+
+<!-- CONTATO -->
+<section id="contato">
+<h2>Contato</h2>
+<form id="form-contato">
+<input type="text" name="nome" placeholder="Seu nome" required>
+<input type="email" name="email" placeholder="Seu email" required>
+<textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+<button type="submit">Enviar</button>
+</form>
+<p id="resposta"></p>
+<p>Email: schiodias5@gmail.com | Telefone: (11) 99467-5491 |</p>
+</section>
+
+<script>
+// Formulário simples
+const form = document.getElementById('form-contato');
+const resposta = document.getElementById('resposta');
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    const nome = form.nome.value;
+    resposta.textContent = `Mensagem recebida! Obrigado, ${nome}.`;
+    form.reset();
+});
+
+// Menu ativo simples
+const sections = document.querySelectorAll('section');
+const menuLinks = document.querySelectorAll('nav a');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        if(window.scrollY >= section.offsetTop - window.innerHeight/2){
+            current = section.getAttribute('id');
+        }
+    });
+    menuLinks.forEach(link => {
+        link.classList.remove('active');
+        if(link.getAttribute('href') === `#${current}`) link.classList.add('active');
+    });
+});
+</script>
+
+</body>
+</html>
